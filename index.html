@@ -2,11 +2,147 @@
 <html>
   <head>
     <title>Bitbeam</title>
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .bb1{
+        background-image:url(./img/back.jpg); background-size:100%;
+        color:#111;
+        text-shadow: 0em 0em 2px #bbb;
+        min-height:100px;:
+      }
+
+    .bbsec{margin-top:10em; margin-bottom:2em;}
+    .bbsec h1{
+        margin: 60px 0 40px;
+        font-size: 60px;
+        font-weight: 200;
+        line-height: 1;
+        letter-spacing: -1px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Bitbeam!</h1>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="/">Bitbeam</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron masthead bb1">
+        <h1>Bitbeam</h1>
+        <p>Bitbeam is the building toy for the Maker generation.</p>
+      </div>
+
+
+      <div class="bs-docs-social">
+        <div class="container">
+          <ul class="bs-docs-social-buttons">
+            <li><iframe class="github-btn" 
+                  src="http://ghbtns.com/github-btn.html?user=hugs&repo=bitbeam&type=watch&count=true" 
+                  allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+          </li>
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=hugs&repo=bitbeam&type=fork&count=true"
+                   allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+          </li>
+          <li><a class='btn' href = "http://www.thingiverse.com/thing:11747">Bitbeam on Thingiverse</a>
+          </li> 
+          <li class="follow-btn">
+            <a href="https://twitter.com/bitbeam" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @bitbeam</a>
+          </li>
+          <li class="tweet-btn">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bitbeam" 
+            data-count="horizontal" data-via="twbootstrap">Tweet</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+      <div class="bbsec container">
+        <h1 id = "download">Download</h1>
+        <p class='lead'>There are many ways to make grid beams - here are CAD files for some of the easiest:</p>
+
+        <div class='span4'>
+        <h2>3D Printer</h2>
+        
+          <a href = 'http://www.thingiverse.com/download:37514' class='btn'>DXF File</a>
+          <p>Tutorial to come!</p>
+        </div>
+
+
+        <div class='span4'>
+        <h2>Laser Cutter and Bass Wood</h2>
+
+          <a href = 'https://raw.github.com/hugs/bitbeam/master/src/bitbeam.scad' class='btn'>SCAD</a>
+          <p>Laserable file and instructions to come!</p>
+        </div>
+
+      </div>
+
+
+      <div class="bbsec container">
+        <h1 id="about">About</h1> 
+        <p class='lead'>
+        Bitbeam is an open source hardware design for a building material. Based on a larger scale project, <a href="http://www.gridbeamnation.com/">grid beam</a>, bitbeam is the same
+        size as Lego Technic, and can be used to make robots, cranes, or whatever you can dream up.
+        </p>
+
+        <h3>Lego + Grid Beam = Huh?</h3>
+        <p>
+        Most people are already familiar with Lego. Lego Technic is a geekier version of standard Lego bricks that can be used for building more mechanical and sophisticated structures like toy cranes or robots.
+        </p>
+        <p>
+        Similar to Lego Technic, grid beam is a modular building technology. Unlike other building toys, however, grid beam and Bitbeam are open source hardware designs. You can make grid beam parts in your garage using simple tools like saws and drills. People use grid beam to build bigger things like real tables, beds -- almost anything!
+        </p>
+        <p>
+        Bitbeam is a Lego Technic-compatible building technology inspired by grid beam. Bitbeam is a smaller version of grid beam made with a laser-cutter. It's an experiment to combine two favorite prototyping tools: balsa/basswood and Lego. The idea is to miniaturize grid beam and make it Lego Technic compatible. 
+        </p>
+
+        <h3>Why create Bitbeam? What's wrong with Lego?</h3>
+
+        <p>Nothing's wrong! Lego is awesome stuff. I love Lego, my kids love Lego; I even proposed to my wife at Legoland! Believe me, I love Lego. However, the defining trait of this high-tech post-industrial economy we're building here is that designers won't (necessarily) dominate or control the means of production of the things they design. If someone wants Bitbeams, and I no longer make them, you'll still be able to make them yourself. And you'll have the licensed freedom to do so. Bitbeam-wanters will have the means to create beams themselves to meet demand. Open source hardware democratizes the supply chain.
+        <p>
+        <p>
+        The advantage of building your own Bitbeam parts over Lego is that 1) the materials are cheaper to source yourself, 2) you can make parts in sizes that Lego doesn't make, and 3) playing with lasers is fun!
+        </p>
+      </div>
+
+
+      <div class="bbsec container">
+        <h1 id="projects">Projects</h1> 
+        <p class='lead'>
+          Here are some projects that use bitbeam - if you've made something cool let us know so we can put it here!
+        </p>
+        
+        <h2>Bitbeambot</h2>
+          <img src="./img/bitbeambot.jpg" width="400px" />
+          <p>A robot that can play angry birds on an ipad!</p>  
+      
+
+        <h2>Bitpad</h2>
+          <img src="./img/bitpad.jpg" width="400px" />
+          <p>An iPad stand. Instructions to build are <a href= "http://bitbeam.org/bitpad">here></a></p>
+
+      </div>
+
+      <footer>
+        <p>Follow <a href = "http://twitter.com/bitbeam">@bitbeam</a> on twitter.</p>
+      </footer>
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
